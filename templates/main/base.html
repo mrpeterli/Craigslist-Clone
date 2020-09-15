@@ -10,36 +10,37 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Craigslist</title>
+    <style>
+        .nav-color{
+            background-color: black;
+        }
+    </style>
 </head>
 
-<nav>
-    <div class="container nav-wrapper">
+<nav class="nav-color">
+    <div class="container nav-wrapper black">
         <a href="/" class="brand-logo">Craigslist Clone</a>
         <ul id="nav-mobile" class="right">
         <li><a href="/">Home</a></li>
+        <li><a href="https://shivi-portfolio.herokuapp.com/">Creator</a></li>
         </ul>
     </div>
 </nav>
 
-<h2 style="text-align: center">Welcome to this Craigslist Clone</h2>
+<h3 style="text-align: center">Welcome to this Craigslist Clone</h3>
+<h4 style="text-align: center">Search whaterver you want.</h4>
  
 <div class="row">
-    <div class="col s4">
+    <div class="col s6">
         <div class="center">
-            <i class="large material-icons" style="color:red">flash_on</i>
-            <p class="light center">It scrapes data from Craigslist Website.</p>
+            <i class="large material-icons" style="color:black">flash_on</i>
+            <p class="light center">It scrapes data from the Craigslist Website.</p>
         </div>
     </div>
-    <div class="col s4">
+    <div class="col s6">
         <div class="center">
-            <i class="large material-icons" style="color:blue">flash_on</i>
-            <p class="light center">It scrapes data from Craigslist Website.</p>
-        </div>
-    </div>
-    <div class="col s4">
-        <div class="center">
-            <i class="large material-icons" style="color:red">flash_on</i>
-            <p class="light center">It scrapes data from Craigslist Website.</p>
+            <i class="fab fa-python fa-7x"></i>
+            <p class="light center">It is made using Django, MaterializeCSS, requests, BeautifulSoup</p>
         </div>
     </div>
 </div>
@@ -57,6 +58,7 @@
 {% block content %}
 {% endblock %}
 
+<script src="https://kit.fontawesome.com/4b58f03fab.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
