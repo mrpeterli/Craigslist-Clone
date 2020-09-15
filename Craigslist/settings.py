@@ -26,7 +26,9 @@ SECRET_KEY = '6jxvc(ya%(y53=xq93+0o)a#r(ns(o8o1g7ejw8-1=g!!b7c8n'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'https://craigslist-clone01.herokuapp.com/',
+]
 
 
 # Application definition
