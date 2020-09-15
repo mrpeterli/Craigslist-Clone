@@ -37,7 +37,7 @@ def new_search(request):
         if post.find(class_='result-image').get('data-ids'):
             post_image_id = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
             post_image_url = BASE_IMAGE_URL.format(post_image_id)
-            print(post_image_url)
+            #print(post_image_url)
         else:
             post_image_url = 'https://craigslist.org/images/peace.jpg'
 
@@ -47,6 +47,6 @@ def new_search(request):
         'search': search,
         'final_postings': final_postings,
     }
-    
+
     return render(request,'main/new_search.html',context)
 

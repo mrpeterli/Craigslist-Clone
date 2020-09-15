@@ -29,6 +29,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
     'https://craigslist-clone01.herokuapp.com/',
+    'localhost:8000'
 ]
 
 
@@ -80,15 +81,19 @@ WSGI_APPLICATION = 'Craigslist.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-
+#url ='postgres://uleqjznzxbwmga:4c77251852d490c5c73e9544a8b0f7e983858f653976265ef06e6274b393c022@ec2-50-16-221-180.compute-1.amazonaws.com:5432/d1hnqjhluafk3f'
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd1hnqjhluafk3f',
+        'HOST': 'ec2-50-16-221-180.compute-1.amazonaws.com',
+        'PORT':5432,
+        'USER': 'uleqjznzxbwmga',
+        'PASSWORD': '4c77251852d490c5c73e9544a8b0f7e983858f653976265ef06e6274b393c022'
     }
 }
 
-DATABASES['default'] = dj_database_url.config()
+print(DATABASES)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
